@@ -1,555 +1,121 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Food Lover</title>
-
     <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-
-    <!-- HEADER -->
-
-    <header id="home">
-
-        <!-- NAVBAR -->
-
-        <nav>
-
-            <div class="logo">
-                <i class="fa-solid fa-utensils"></i>
-                FoodLover
+    <section id="offers">
+        <div class="container">
+            <div class="title">
+                <h2>Our Special Offers</h2>
+                <p>More than 25+ years of experience</p>
             </div>
-
-            <ul>
-
-                <li><a href="#home">Home</a></li>
-
-                <li><a href="#about">About</a></li>
-
-                <li><a href="#menu">Menu</a></li>
-
-                <li><a href="#gallery">Gallery</a></li>
-
-                <li><a href="#contact">Contact</a></li>
-
-            </ul>
-
-        </nav>
-
-        <!-- HERO -->
-
-        <div class="hero-content">
-
-            <h1>
-                Welcome To Food Lover Restaurant
-            </h1>
-
-            <p>
-                Here you can find Most delicious food in the world
-            </p>
-
-            <a href="#" class="btn">
-                Book a Table
-            </a>
-
+            <div class="offers-items-wrapper">
+                <div class="offers-items">
+                    <div class="offer-item">
+                        <img src="./images/offer1.png" alt="Quattro Pasta">
+                        <div class="offer-info">
+                            <h3>Quattro Pasta</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quibusdam.</p>
+                            <p><del>$55.00</del> <span class="primary-text">$18.00</span></p>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <img src="./images/offer2.png" alt="Vegetarian Pasta">
+                        <div class="offer-info">
+                            <h3>Vegetarian Pasta</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quibusdam.</p>
+                            <p><del>$55.00</del> <span class="primary-text">$18.00</span></p>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <img src="./images/offer3.png" alt="Gluten-Free Pasta">
+                        <div class="offer-info">
+                            <h3>Gluten-Free Pasta</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quibusdam.</p>
+                            <p><del>$55.00</del> <span class="primary-text">$18.00</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="offer-btn" id="offers-prev">&#10094;</button>
+            <button class="offer-btn" id="offers-next">&#10095;</button>
         </div>
-
-    </header>
-
-    <!-- ABOUT -->
-
-    <section class="about" id="about">
-
-        <div class="about-text">
-
-            <h2>The Food Lover history</h2>
-
-            <span>More than 25+ years of experience</span>
-
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequuntur quibusdam saepe natus numquam dolorum aliquam.
-            </p>
-
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quaerat nesciunt aspernatur earum sequi consequatur.
-            </p>
-
-            <a href="#" class="dark-btn">
-                Learn More
-            </a>
-
-        </div>
-
-        <!-- IMAGES -->
-
-        <div class="about-images">
-
-            <img src="./images/about_img.png">
-        </div>
-
     </section>
 
-    <!-- OFFERS -->
-
-    <section class="offers">
-
-        <h2>Our Special Offers</h2>
-
-        <p>More than 25+ years of experience</p>
-
-        <div class="offers-container">
-
-            <!-- CARD -->
-
-            <div class="offer-card">
-
-                <img src="./images/offer1.png">
-
-                <h3>Quattro Pasta</h3>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                <span>$18.00</span>
-
+    <section id="menu">
+        <div class="container">
+            <div class="title">
+                <h2>Our Special Menu</h2>
+                <p>Order two and get third for free</p>
             </div>
-
-            <!-- CARD -->
-
-            <div class="offer-card">
-
-                <img src="./images/offer2.png">
-
-                <h3>Vegetarian Pasta</h3>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                <span>$18.00</span>
-
+            <div class="menu-items">
+                <div class="menu-items-left"></div>
+                <div class="menu-items-right"></div>
             </div>
-
-            <!-- CARD -->
-
-            <div class="offer-card">
-
-                <img src="./images/offer3.png">
-
-                <h3>Gluten-Free Pasta</h3>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                <span>$18.00</span>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- MENU -->
-
-    <section class="menu" id="menu">
-
-        <h2>Our Special Menu</h2>
-
-        <p>Order two and get third for free</p>
-
-        <div class="menu-container">
-
-            <!-- ITEM -->
-
-            <div class="menu-item">
-
-                <img src="./images/food1.png">
-
-                <div>
-
-                    <h3>
-                        LASAL CHEESE
-                        <span>$18.00</span>
-                    </h3>
-                    <br>
-                    <hr>
-                    <br>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, explicabo.</p>
-
-                </div>
-
-            </div>
-
-            <!-- ITEM -->
-
-            <div class="menu-item">
-
-                <img src="./images/food2.png">
-
-                <div>
-
-                    <h3>
-                        KOFTA MEAT
-                        <span>$40.00</span>
-                    </h3>
-                    <br>
-                    <hr>
-                    <br>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, explicabo.</p>
-
-                </div>
-
-            </div>
-
-            <!-- ITEM -->
-
-            <div class="menu-item">
-
-                <img src="./images/food3.png">
-
-                <div>
-
-                    <h3>
-                        JUMBO CRAB SHRIMP
-                        <span>$24.00</span>
-                    </h3>
-                    <br>
-                    <hr>
-                    <br>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, explicabo.</p>
-
-                </div>
-
-            </div>
-
-            <!-- ITEM -->
-
-            <div class="menu-item">
-
-                <img src="./images/food4.png">
-
-                <div>
-
-                    <h3>
-                        SPANISH PIES
-                        <span>$14.00</span>
-                    </h3>
-                    <br>
-                    <hr>
-                    <br>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, explicabo.</p>
-
-                </div>
-
-            </div>
-                <div class="menu-item">
-
-                <img src="./images/food5.png">
-
-                <div>
-
-                    <h3>
-                        KOKTAIL JUICE
-                        <span>$12.00</span>
-                    </h3>
-                    <br>
-                    <hr>
-                    <br>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, explicabo.</p>
-                </div>
-
-                </div>
-                    <div class="menu-item">
-
-                <img src="./images/food6.png">
-
-                <div>
-
-                    <h3>
-                        CHEESE TOAST
-                        <span>$6.00</span>
-                    </h3>
-                    <br>
-                    <hr>
-                    <br>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, explicabo.</p>
-
-                </div>
-
-            </div>
-                <div class="menu-item">
-
-                <img src="./images/food7.jpeg">
-
-                <div>
-
-                    <h3>
-                        CABO STEAK
-                        <span>$60.00</span>
-                    </h3>
-                    <br>
-                    <hr>
-                    <br>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, explicabo.</p>
-
-                </div>
-                </div>   
-                <div class="menu-item">
-
-                <img src="./images/food8.jpeg">
-
-                <div>
-
-                    <h3>
-                        FRIED SALAD
-                        <span>$14.00</span>
-                    </h3>
-                    <br>
-                    <hr>
-                    <br>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, explicabo.</p>
-
-                </div>
-                </div>
-                 <div class="menu-item">
-
-                <img src="./images/food9.jpeg">
-
-                <div>
-
-                    <h3>
-                        ORGANIK FRUIT
-                        <span>$8.00</span>
-                    </h3>
-                    <br>
-                    <hr>
-                    <br>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, explicabo.</p>
-
-                </div>
-                </div>
-                <div class="menu-item">
-
-                <img src="./images/food10.jpeg">
-
-                <div>
-
-                    <h3>
-                        CHEKEN SANDWICH
-                        <span>$20.00</span>
-                    </h3>
-                    <br>
-                    <hr>
-                    <br>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, explicabo.</p>
-
-                </div>
-                </div>
-                <div class="menu-item">
-
-                <img src="./images/food11.jpeg">
-
-                <div>
-
-                    <h3>
-                        CHEESE PIZZA
-                        <span>$18.00</span>
-                    </h3>
-                    <br>
-                    <hr>
-                    <br>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, explicabo.</p>
-
-                </div>
-                </div>
-                <div class="menu-item">
-
-                <img src="./images/food12.jpeg">
-
-                <div>
-
-                    <h3>
-                        MEGA CHEESE PIZZA
-                        <span>$30.00</span>
-                    </h3>
-                    <br>
-                    <hr>
-                    <br>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, explicabo.</p>
-
-                </div>
-                </div>
-        </div>
-
-        <a href="#" class="menu-btn">
-            Explore Full Menu
-        </a>
-
-    </section>
-
-    <!-- DAYTIME -->
-
-    <section class="daytime">
-
-        <div class="day-box">
-
-            <i class="fa-solid fa-mug-hot"></i>
-
-            <h3>Breakfast</h3>
-
-            <p>8:00 am to 10:00 am</p>
-
-        </div>
-
-        <div class="day-box">
-
-            <i class="fa-solid fa-bowl-food"></i>
-
-            <h3>Lunch</h3>
-
-            <p>4:00 pm to 7:00 pm</p>
-
-        </div>
-
-        <div class="day-box">
-
-            <i class="fa-solid fa-utensils"></i>
-
-            <h3>Dinner</h3>
-
-            <p>9:00 pm to 1:00 am</p>
-
-        </div>
-
-        <div class="day-box">
-
-            <i class="fa-solid fa-ice-cream"></i>
-
-            <h3>Dessert</h3>
-
-            <p>All day</p>
-
-        </div>
-
-    </section>
-
-    <!-- GALLERY -->
-
-    <section class="gallery" id="gallery">
-
-        <h2>Our Food Gallery</h2>
-
-        <div class="gallery-container">
-
-            <img src="./images/gallery1.jpeg">
-
-            <img src="./images/gallery2.jpeg">
-
-            <img src="./images/gallery3.jpeg">
-
-            <img src="./images/gallery4.jpeg">
-
-            <img src="./images/gallery5.jpeg">
-
-            <img src="./images/gallery6.jpeg">
-
-        </div>
-
-    </section>
-
-    <!-- CONTACT -->
-
-    <section class="contact" id="contact">
-
-        <div class="contact-info">
-
-            <h2>ADDRESS</h2>
-
-            <p>
-                <i class="fa-solid fa-location-dot"></i>
-                Mansoura, Egypt
-            </p>
-
-            <p>
-                <i class="fa-solid fa-phone"></i>
-                Phone: 123456789
-            </p>
-
-            <p>
-                <i class="fa-solid fa-envelope"></i>
-                support@foodlover.com
-            </p>
-
-            <h2>WORKING HOURS</h2>
-
-            <p>8:00 am to 11:00 pm weekdays</p>
-
-            <p>11:00 am to 1:00 am weekends</p>
-
-            <h2>FOLLOW US</h2>
-
-            <div class="social">
-
-                <i class="fab fa-facebook-f"></i>
-
-                <i class="fab fa-twitter"></i>
-
-                <i class="fab fa-instagram"></i>
-
-            </div>
-
-        </div>
-
-        <!-- FORM -->
-
-        <form>
-
-            <input type="text" placeholder="Full Name">
-
-            <input type="email" placeholder="Email Address">
-
-            <input type="text" placeholder="Subject">
-
-            <textarea placeholder="Message"></textarea>
-
-            <button type="submit">
-                SEND MESSAGE
+            <button class="btn btn-third">
+                <a href="#">Explore Full Menu</a>
             </button>
-
-        </form>
-
+        </div>
     </section>
 
-    <!-- FOOTER -->
+    <section id="gallery">
+        <div class="container">
+            <h2>Our Food Gallery</h2>
+            <div class="img-gallery">
+                <img src="./images/gallery1.jpeg" alt="gallery1">
+                <img src="./images/gallery2.jpeg" alt="gallery2">
+                <img src="./images/gallery3.jpeg" alt="gallery3">
+                <img src="./images/gallery4.jpeg" alt="gallery4">
+                <img src="./images/gallery5.jpeg" alt="gallery5">
+                <img src="./images/gallery6.jpeg" alt="gallery6">
+            </div>
+        </div>
+    </section>
 
-    <footer>
-
-        <p>
-            Copyright © 2026 All rights reserved
-        </p>
-
-    </footer>
-
+    <section id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div>
+                        <h3>ADDRESS</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> Mansoura, Beside stadium, Egypt</p>
+                        <p><i class="fa-solid fa-phone"></i> Phone: 123456789</p>
+                        <p><i class="fa-regular fa-envelope"></i> support@foodlover.com</p>
+                    </div>
+                    <div>
+                        <h3>WORKING HOURS</h3>
+                        <p>8:00 am to 11:00 pm on Weekdays</p>
+                        <p>11:00 am to 1:00 am on Weekends</p>
+                    </div>
+                    <div>
+                        <h3>FOLLOW US</h3>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form id="contactForm">
+                    <input type="text" name="Name" id="name" placeholder="Full Name">
+                    <div id="name-error" class="error-message"></div>
+                    <input type="email" name="email" id="email" placeholder="Email Address">
+                    <div id="email-error" class="error-message"></div>
+                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                    <div id="subject-error" class="error-message"></div>
+                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Message"></textarea>
+                    <div id="message-error" class="error-message"></div>
+                    <button type="submit" class="btn btn-third">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
