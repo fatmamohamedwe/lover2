@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Quicksand", sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    overflow-x:hidden;
+    background:#fff;
+}
+
+.container{
+    width:80%;
+    max-width:1100px;
+    margin:0 auto;
+}
+
+a{
+    text-decoration:none;
+}
+
+button{
+    font-family:"Quicksand", sans-serif;
+}
+
+/* Offers Section */
+
+#offers{
+    background:url("./images/offer-background.jpg") center center/cover fixed;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:5rem 0;
+    position:relative;
+    text-align:center;
+    color:#fff;
+}
+
+#offers .title p{
+    color:#fff;
+    font-weight:500;
+}
+
+#offers .offers-items-wrapper{
+    overflow:hidden;
+    width:100%;
+    max-width:960px;
+    margin:auto;
+}
+
+#offers .offers-items{
+    display:flex;
+    transition:transform 0.5s ease-in-out;
+}
+
+#offers .offer-item{
+    min-width:100%;
+    box-sizing:border-box;
+    padding:40px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+}
+
+#offers .offer-item img{
+    width:220px;
+    border-radius:20px;
+}
+
+#offers .offer-item div{
+    text-align:left;
+    max-width:600px;
+}
+
+#offers .offer-item h3{
+    font-size:32px;
+    color:#fff;
+    margin-bottom:15px;
+}
+
+#offers .offer-item p{
+    color:#fff;
+    font-size:15px;
+    line-height:1.7;
+    margin-bottom:15px;
+}
+
+#offers .primary-text{
+    font-weight:700;
+    font-size:18px;
+    color:#f5b041;
+    margin-left:10px;
+}
+
+#offers .offer-btn{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background-color:rgba(0, 0, 0, 0.5);
+    color:white;
+    font-size:28px;
+    border:none;
+    cursor:pointer;
+    padding:12px 18px;
+}
+
+#offers .offer-prev{
+    left:10px;
+}
+
+#offers .offer-next{
+    right:10px;
+}
+
+#offers .offer-btn:hover{
+    background-color:rgba(0,0,0,0.8);
+}
+
+#menu{
+    background:#f4f2ed;
+    padding:5rem 0;
+}
+
+#menu .title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+#menu .title h2{
+    color:#383848;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+#menu .title p{
+    color:#9a9a9a;
+    font-weight:600;
+}
+
+.menu-items{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.menu-items-left,
+.menu-items-right{
+    display:grid;
+    gap:20px;
+}
+
+.menu-item{
+    display:flex;
+    align-items:flex-start;
+    gap:20px;
+    padding:20px;
+    background:#fff;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.06);
+}
+
+.menu-item img{
+    width:90px;
+    height:90px;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+.menu-item h3{
+    margin-bottom:8px;
+    color:#383848;
+    position:relative;
+    padding-right:80px;
+}
+
+.menu-item h3 span{
+    position:absolute;
+    right:0;
+    top:0;
+    color:#f5b041;
+    font-weight:700;
+}
+
+.menu-item p{
+    margin:0;
+    color:#777;
+    line-height:1.7;
+}
+
+.btn{
+    display:block;
+    margin:auto;
+    border:none;
+    margin-top:30px;
+}
+
+.btn-third a{
+    color:#f4f2ed;
+    background-color:#383848;
+    padding:12px 28px;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+#gallery{
+    background:url("./images/offer-background.jpg") center center/cover;
+    padding:4rem 0;
+    color:#fff;
+}
+
+#gallery .container{
+    text-align:center;
+}
+
+#gallery h2{
+    font-size:36px;
+    margin-bottom:30px;
+}
+
+.img-gallery{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.img-gallery img{
+    width:300px;
+    height:200px;
+    border-radius:10px;
+    object-fit:cover;
+    cursor:pointer;
+    opacity:0.9;
+    transition:transform 0.3s ease, opacity 0.3s ease;
+}
+
+.img-gallery img:hover{
+    transform:scale(1.05);
+    opacity:1;
+}
+
+#boxContainer{
+    display:none;
+    justify-content:center;
+    align-items:center;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.85);
+    z-index:999;
+}
+
+#boxItem{
+    width:80%;
+    max-width:1000px;
+    height:70%;
+    background-size:cover;
+    background-position:center;
+    border-radius:10px;
+    position:relative;
+}
+
+#boxItem i{
+    color:#fff;
+    cursor:pointer;
+    position:absolute;
+    transition:color 0.3s;
+}
+
+#boxItem i:hover{
+    color:#f5b041;
+}
+
+#gallery-close{
+    top:20px;
+    right:20px;
+}
+
+#gallery-prev{
+    left:20px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+#gallery-next{
+    right:20px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+#contact{
+    background:#f4f2ed;
+    padding:5rem 0;
+}
+
+#contact .container{
+    max-width:900px;
+}
+
+.contact-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:start;
+}
+
+#contact .contact-info{
+    width:100%;
+}
+
+#contact .contact-info div{
+    margin-bottom:30px;
+    line-height:1.7;
+}
+
+#contact .contact-info h3{
+    font-size:28px;
+    color:#383848;
+    margin-bottom:10px;
+}
+
+#contact .contact-info p{
+    color:#9a9a9a;
+}
+
+#contact .contact-info p i{
+    color:#e4b95b;
+    margin-right:5px;
+}
+
+#contact .contact-info a i{
+    color:#fff;
+    background:#383848;
+    padding:10px;
+    font-size:20px;
+    border-radius:50%;
+}
+
+#contact .contact-info a i:hover{
+    background-color:#e4b95b;
+    color:#383848;
+}
+
+form input,
+textarea{
+    display:block;
+    width:100%;
+    padding:20px 15px;
+    margin:20px 0;
+    border:none;
+    background-color:#e3e2dd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+form input:focus,
+textarea:focus{
+    outline:none;
+}
+
+.error-message{
+    color:#e74c3c;
+    font-size:14px;
+    min-height:18px;
+}
+
+form button{
+    color:#fff;
+    background-color:#383848;
+    padding:15px 30px;
+    border:none;
+    cursor:pointer;
+    font-size:18px;
+    transition:all 0.3s ease;
+    border-radius:10px;
+}
+
+form button:hover{
+    background-color:#e4b95b;
+    color:#383848;
+}
+
+@media(max-width:960px){
+    .contact-content,
+    .menu-items{
+        grid-template-columns:1fr;
+    }
+
+    .arrows{
+        padding:0 10px;
+    }
+}
+
+@media(max-width:760px){
+    .offer-item{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .offer-item div{
+        max-width:100%;
+    }
+
+    .img-gallery img{
+        width:100%;
+        height:auto;
+    }
+}
